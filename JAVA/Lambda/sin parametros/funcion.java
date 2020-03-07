@@ -1,3 +1,3 @@
-public interface FuncionTest{
+public interface Funcion{
 	public void saludar();
 }

@@ -1,11 +1,11 @@
-public class LambdaTest2{
+public class Test{
 	public static void main(String[] args) {
 		// Expresión lambda ==> representa un objeto de una interfaz funcional
 		Operaciones op = (num1, num2) -> System.out.println(num1 + num2);
 
 		//op.imprimeSuma(5, 10);
 
-		LambdaTest2 obj = new LambdaTest2(); //Otra manera de hacerlo
+		Test obj = new LambdaTest2(); //Otra manera de hacerlo
 		obj.miMetodo(op, 10,10);
 	}
 
