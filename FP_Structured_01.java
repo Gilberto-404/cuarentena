@@ -1,37 +1,36 @@
-import java.util.*;
-//Structured Approach.
+import java.util.List;
+//Structured Approach
 public class FP_Structured_01{
-
+    
     public static void main(String[] args) {
-
+        
         List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
-
         FP_Structured_01.printAllNumbersInListStructured(numbers);
         System.out.println("");
-        FP_Structured_01.printEventNumbersInListStructured(numbers);
+        FP_Structured_01.printEvenNumbersInListStructured(numbers);
         System.out.println("");
 
-        printAllNumbersInListStructured(List.of(12, 9, 13, 4, 6, 2, 4, 12, 15));
+        FP_Structured_01.printAllNumbersInListStructured(List.of(12, 9, 13, 4, 6, 2, 4, 12, 15));
         System.out.println("");
-        printEventNumbersInListStructured(List.of(12, 9, 13, 4, 6, 2, 4, 12, 15));
+        FP_Structured_01.printEvenNumbersInListStructured(List.of(12, 9, 13, 4, 6, 2, 4, 12, 15));
         System.out.println("");
     }
 
-    private static void printAllNumbersInListStructured(List<Integer> numbers) {
-        // how to loop the numbers?
-        for (int number : numbers) {
+    private static void printAllNumbersInListStructured(List<Integer> numbers){
+        //How to loop  the numbers        
+        for(int number : numbers){
             System.out.print(number + ", ");
         }
-        System.out.println("");
+        System.out.print("");
     }
 
-    private static void printEventNumbersInListStructured(List<Integer> numbers) {
-        // how to loop the numbers
-        for (int number : numbers) {
-            if (number % 2 == 0) {
+    private static void printEvenNumbersInListStructured(List<Integer> numbers){
+        //how to loop the numbers    
+        for(int number : numbers){
+            if(number % 2 == 0){
                 System.out.print(number + ", ");
             }
         }
-        System.out.println("");
+        System.out.print("");
     }
 }
