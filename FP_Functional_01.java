@@ -1,5 +1,5 @@
 import java.util.List;
-public class FP_Functional_02{
+public class FP_Functional_01{
     public static void main(String[] args) {
         List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
         
@@ -32,7 +32,7 @@ public class FP_Functional_02{
     private static void printAllNumbersInListFunctional(List<Integer> numbers) {
         //What to do?
         numbers.stream()                    //---->Convert to Stream
-        .forEach(FP_Functional_02::print);  //---->Method Reference
+        .forEach(FP_Functional_01::print);  //---->Method Reference
         System.out.println("");
     }
 
@@ -40,8 +40,8 @@ public class FP_Functional_02{
     private static void printEvenNumbersInListFunctional(List<Integer> numbers){
         //What to do?
         numbers.stream()                        //----->Convert to Stream
-            .filter(FP_Functional_02::isEven)   //----->Method Reference --> Filter = Only Allow Even NUmbers
-            .forEach(FP_Functional_02::print);  //----->Method Reference
+            .filter(FP_Functional_01::isEven)   //----->Method Reference --> Filter = Only Allow Even NUmbers
+            .forEach(FP_Functional_01::print);  //----->Method Reference
         System.out.println("");
     }
 
@@ -49,7 +49,7 @@ public class FP_Functional_02{
         numbers.stream()                            //----->Convert to Stream
                 .filter(number -> number % 2 == 0)  //----->Lambda Expression
                 .map(number -> number * number)     //----->Lambda --> mapping = x -> x * x
-                .forEach(FP_Functional_02::print);  //----->Method Reference
+                .forEach(FP_Functional_01::print);  //----->Method Reference
         System.out.println("");
     }
 }
